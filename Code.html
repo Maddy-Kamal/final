@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For Someone Special ❤️</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+      color: #333;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px;
+    }
+    header h1 {
+      font-size: 3rem;
+      color: #222;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #444;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    nav a {
+      text-decoration: none;
+      background: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      color: #333;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      background: #333;
+      color: white;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #b23a48;
+    }
+    section p {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    /* Photo Section */
+    .photo {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+    }
+    .photo img {
+      max-width: 280px;
+      border-radius: 20px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+      transition: transform 0.4s;
+    }
+    .photo img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Skills/Interests */
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .skill {
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      flex: 1 1 200px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .skill:hover { transform: translateY(-5px); }
+
+    /* Surprise button */
+    .secret-btn {
+      display: block;
+      margin: 30px auto;
+      background: #ff4d6d;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      border-radius: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .secret-btn:hover {
+      background: #e63950;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(255,255,255,0.6);
+      margin-top: 40px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>For Someone Special ❤️</h1>
+    <p>A little space on the web… just for you ✨</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#memories">Photo</a>
+      <a href="#fun">Surprise</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About You</h2>
+    <p>
+      You are my favorite person, my constant smile, and the best part of every day.  
+      This isn’t just a webpage — it’s a small piece of how much you mean to me 💕.
+    </p>
+  </section>
+
+  <section id="memories">
+    <h2>Your Smile</h2>
+    <div class="photo">
+      <!-- 👉 Replace "her-photo.jpg" with her actual photo file -->
+      <img src="her-photo.jpg" alt="Her Beautiful Smile">
+    </div>
+    <p>
+      They say a picture is worth a thousand words… but your smile leaves me speechless.  
+    </p>
+  </section>
+
+  <section id="fun">
+    <h2>A Little Surprise</h2>
+    <p>Click the button below 👇</p>
+    <button class="secret-btn" onclick="showSecret()">Click Me</button>
+  </section>
+
+  <footer>
+    <p>Made with ❤️ just for you</p>
+  </footer>
+
+  <script>
+    function showSecret() {
+      alert("You are loved more than words can ever say...💖!");
+    }
+  </script>
+</body>
+</html>
